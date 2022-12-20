@@ -1,6 +1,6 @@
-# FAS-1-Single-Module
+# FAS-3-Package
 
-Contains a working example of a single file Flask App
+Contains a working example of a package Flask App
 
 ![](https://github.com/creativecommons/cc-assets/blob/main/license_badges/small/cc_zero.svg)
 
@@ -40,5 +40,9 @@ pip install -r requirements.txt
 ### run
 
 ```bash
-python3 app.py
+flask run
+```
+or
+```bash
+python3 run.py
 ```
