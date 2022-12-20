@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>FAS-1</title>
+</head>
+<body>
+<h1>FAS-1</h1>
+<p>String: {{ stringv }}</p>
+<p>Int: {{ intv }}</p>
+<p>Float: {{ floatv }}</p>
+<p>Bool: {{ boolv }}</p>
+<p>List: {{ listv }} :: </p>
+{% for val in listv %}
+    <p>{{ val }}</p>
+{% endfor %}
+<p>Dict: {{ dictv }} :: </p>
+{% for key, val in dictv.items() %}
+    <p>{{ key }} = {{ val }}</p>
+{% endfor %}
+<img src="{{ url_for('static', filename='flask_planet_tpbk.png') }}" alt="Flask-Planet">
+</body>
+</html>
