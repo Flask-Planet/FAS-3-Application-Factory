@@ -18,7 +18,7 @@ Contains a working example of a package Flask App
 2. Open terminal and cd to the directory of the project.
 
 ```text
-cd /path/to/FAS-1-Single-File
+cd /path/to/FAS-3-Package
 ```
 
 3. Create a virtual environment and activate it.
