@@ -1,4 +1,4 @@
-# FAS-3-Package
+# FAS-3-Application-Factory
 (FAS, Flask App Structure)
 
 Contains a working example of a package Flask App
