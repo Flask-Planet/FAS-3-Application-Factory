@@ -57,7 +57,7 @@ flask run
 or
 
 ```bash
-python3 app.py
+python3 run.py
 ```
 
 ---
@@ -89,5 +89,5 @@ flask run
 or
 
 ```bash
-python app.py
+python run.py
 ```
