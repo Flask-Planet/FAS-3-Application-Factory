@@ -1,1 +1,44 @@
-FAS-3-Package by Flask-Planet is marked with CC0 1.0
+Flask-Planet aims to provide the Flask community with tools, tips,
+guides, methods and more to help them create their own projects.
+
+This work is done by volunteers that have taken the time to share their
+ideas, methods, techniques and knowledge with the community.
+
+The least we can do is give them credit for their work and thank them
+for sharing valuable intellectual property.
+
+If you have any concerns about using the work withing this project
+email us on legal(at)flask-planet.org to discuss.
+
+
+All work is licensed under the Attribution 3.0 Unported (CC BY 3.0) license
+with some overwriting clauses added to help prevent patent trolls and
+others taking credit for the intellectual property of the authors.
+
+
+Explainer Clause.
+This clause overwrites the need for attribution in certain cases.
+
+1. Usage of this code in any commercial or non-commercial end project
+   is allowed without the need for attribution.
+
+2. Attribution MUST be given on any explainer guides or tutorials in any
+   form of media.
+
+   You MUST give attribution to the persons named in the README.md file
+   under the "Attribution" header. Linking to this project IS sufficient
+   attribution. The projects link can be found at the bottom of this file.
+
+
+Anti-Patent Clause.
+This clause overwrites your ability to patent any part of this project.
+
+1. This code is not to be patented in any way, shape or form.
+   This code is to be used freely by anyone, anywhere, at any time.
+
+
+FAS-3-Application-Factory by Flask-Planet is marked with
+
+Attribution 3.0 Unported (CC BY 3.0)
+
+https://github.com/Flask-Planet/FAS-3-Application-Factory
