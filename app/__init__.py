@@ -1,10 +1,25 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
-# this import needs to be relative (.views.ind...) as views is not a package
-from app.views.index import index_views
-
 db = SQLAlchemy()
+
+
+def setup_views(app: Flask) -> None:
+    from app.views.index import index_views
+
+    index_views(app)
+
+
+def setup_models(app: Flask) -> None:
+    from app.models import Example
+
+    db.init_app(app)
+
+
+def setup_blueprints(app: Flask) -> None:
+    from app.blueprint import example_blueprint
+
+    app.register_blueprint(example_blueprint)
 
 
 def create_app():
@@ -17,11 +32,11 @@ def create_app():
 
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 
-    db.init_app(app)
+    setup_models(app)
+    setup_blueprints(app)
+    setup_views(app)
 
     with app.app_context():
         db.create_all()
-
-    index_views(app)
 
     return app
