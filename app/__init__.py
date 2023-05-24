@@ -23,8 +23,6 @@ def setup_blueprints(app: Flask) -> None:
 
 
 def create_app():
-    from app.models import Example
-
     app = Flask(
         __name__,
         static_host="",
