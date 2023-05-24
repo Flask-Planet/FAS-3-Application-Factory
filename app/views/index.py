@@ -2,6 +2,8 @@ from flask import render_template
 
 
 def index_views(app):
+    from app.models import Example
+
     @app.route('/')
     def index():
         stringv = "value"
@@ -10,6 +12,9 @@ def index_views(app):
         boolv = True
         listv = ["value1", "value2", "value3"]
         dictv = {"key1": "value1", "key2": "value2", "key3": "value3"}
+
+        print(Example)
+
         return render_template(
             "index.html",
             stringv=stringv,
