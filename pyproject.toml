@@ -1,0 +1,17 @@
+[project]
+name = "FAS-3-Application-Factory"
+version = "2"
+authors = [
+    { name = "David Carmichael" },
+]
+description = "A repo that contains a working example of Flask using the Application Factory pattern."
+requires-python = ">=3.8"
+license = { text = "Attribution (For explainers) 4.0 International" }
+classifiers = [
+    "Framework :: Flask",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "flask",
+    "flask-sqlalchemy",
+]
