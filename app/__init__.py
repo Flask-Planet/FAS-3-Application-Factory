@@ -1,15 +1,13 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-
-db = SQLAlchemy()
+from app.extensions import db
 
 
-def setup_views(app: Flask) -> None:
-    from app.views.index import index_views
-    from app.views.more import more_views
+def setup_routes(app: Flask) -> None:
+    from app.routes.index import index_routes
+    from app.routes.more import more_routes
 
-    index_views(app)
-    more_views(app)
+    index_routes(app)
+    more_routes(app)
 
 
 def setup_models(app: Flask) -> None:
@@ -32,7 +30,7 @@ def create_app():
 
     setup_models(app)
     setup_blueprints(app)
-    setup_views(app)
+    setup_routes(app)
 
     with app.app_context():
         db.create_all()

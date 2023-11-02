@@ -2,7 +2,7 @@ from flask import Flask
 from flask import render_template
 
 
-def index_views(app: Flask):
+def index_routes(app: Flask):
     from app.models import Example
 
     @app.route('/')
